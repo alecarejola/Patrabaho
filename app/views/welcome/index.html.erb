@@ -1,16 +1,26 @@
 <%= render "shared/navbar", header: "", tagline: "", alignment:"text-center" %>
 
 <main>
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Album example</h1>
-        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-        <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-        </p>
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 justify-content-center align-items-center">
+    <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5" id="flavorText">What digital services <br> are you looking for?</h2>
+      </div>  
+      <div class="container">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Try &#148graphic design&#148" id="searchBar">
+            <span class="input-group-btn">
+              <button class="btn btn-search" type="button"><i class="fa fa-search fa-fw"></i> Search</button>
+            </span>
+        </div>
       </div>
     </div>
-  </section>
+    <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <%= image_tag "/assets/SearchFrontPage.png", :size => "470x400" %>
+      </div>
+    </div>
+  </div>
 </main>
+
+<%= render "shared/footer", header: "", tagline: "", alignment:"text-center" %>

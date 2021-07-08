@@ -1,5 +1,7 @@
 // Import Bootstrap v5  
-@import "~bootstrap/scss/bootstrap";  
+@import "~bootstrap/scss/bootstrap";
+//import Font-Awesome template
+//@import "font-awesome";
 
 .paTrabahoNavBar{
   color:rgb(15, 54, 126);
@@ -28,4 +30,35 @@
 }
 #services{
   color: rgb(197, 20, 20);
+}
+h2#flavorText{
+  color: rgb(250, 211, 82);
+}
+input#searchBar{
+  background: #f6ae2d;
+}
+a.btnblock{
+  margin: auto;
+}
+.btn-search {
+  background: #ee942d;
+  border-radius: 0;
+  color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #1c1c1c;
+}
+.btn-search:link, .btn-search:visited {
+  color: #fff;
+}
+.btn-search:active, .btn-search:hover {
+  background: #c0bd05;
+  color: #fff;
+}
+div#logoPage{
+  margin-top: 1rem;
+  margin-bottom: 7rem;
+}
+.logoStyle{
+  margin-left: 0.8rem;
 }
