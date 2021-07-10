@@ -7,12 +7,14 @@ Rails.application.routes.draw do
   get "welcome/index"
 
   #this will be the register page route
-  get "register", to: "register#register"
+  get "register", to: "registers#register"
 
   #this will be the login page route
   get "login", to: "login#login"
 
   #this will be the service seeker page
   get "services", to: "service#service"
+
+  resources :register
 
 end
