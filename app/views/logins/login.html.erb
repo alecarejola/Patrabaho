@@ -1,0 +1,16 @@
+<div class="card bg-light">
+    <article class="card-body mx-auto" style="max-width: 720px;">
+        <%= render "shared/logopage", header: "", tagline: "" %>
+        <%= form_tag "/login" do %>
+            <div class="form-group">
+                <label for="InputEmail1">Email address</label>
+                <%= text_field_tag :Email, "",class: "form-control", placeholder: "Email Address" %>
+            </div>
+            <div class="form-group">
+                <label for="InputPassword">Password</label>
+                <%= password_field_tag :Password, "", class: "form-control", placeholder: "Enter Password" %>
+            <%= submit_tag :login, class: "btn btn-primary mt-2", :value => "Login" %>
+        <% end %>
+    </article>
+</div> <!-- card.// -->
+<!--container end.//-->
